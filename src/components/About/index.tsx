@@ -1,3 +1,4 @@
+import { Box } from "@kuma-ui/core";
 import "./styles.css";
 
 type AboutProps = {
@@ -9,9 +10,9 @@ function About( {text, special}: AboutProps ) {
   const className = special ? "projects" : "text"
   
   return (
-    <div className={className}>
+    <Box className={className}>
         {text}.
-    </div>
+    </Box>
   );
 }
 

@@ -1,5 +1,4 @@
 import { Box, Image } from "@kuma-ui/core"
-import "./styles.css"
 import ImgProfile from "@assets/perfil.jpg"
 
  
@@ -10,7 +9,6 @@ import ImgProfile from "@assets/perfil.jpg"
     display="flex"
     justifyContent="center"
     alignItems="center"
-    className="container-img"
   >
     <Image 
       height="213px"
