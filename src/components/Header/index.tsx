@@ -1,6 +1,6 @@
 import "./styles.css"
 import Logo from "@assets/logo.svg"
-import { Box, Flex } from "@kuma-ui/core";
+import { Box, Flex, HStack, Image, Text } from "@kuma-ui/core";
 
 function Header() {
   return (
@@ -14,16 +14,21 @@ function Header() {
         height="82px"
       >
       <Box>
-          <img src={Logo} alt="logo" />
+          <Image src={Logo} alt="#"/>
       </Box>
-        <nav className="header-nav">
-          <ul className="menu-list">
-            <li>home</li>
-            <li>projects</li>
-            <li>experience</li>
-            <li>contact</li>
-          </ul>
-        </nav>
+        <Box className="header-nav">
+          <HStack 
+            display="inline-flex"
+            alignItems="flex-start"
+            gap="71px"
+            listStyle="none"
+          >
+            <Text color="white">home</Text>
+            <Text color="white">projects</Text>
+            <Text color="white">experience</Text>
+            <Text color="white">about</Text>
+          </HStack>
+        </Box>
       </Flex>
     </>
   );
