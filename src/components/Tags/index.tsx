@@ -5,6 +5,19 @@ import Html from "@assets/html.svg"
 import ReactJs from "@assets/reactjs.svg"
 import { Box, Image } from '@kuma-ui/core'
 
+interface Tag {
+  src: string,
+  alt: string
+}
+
+const tagsData: Tag[] =  [
+  {src: Js, alt: "logo javascript"},
+  {src: Css, alt: "logo css"},
+  {src: NodeJs, alt: "logo node js"},
+  {src: Html, alt: "logo html"},
+  {src: ReactJs, alt: "logo react js"},
+]
+
 function Tags() {
     return (
       <Box 
@@ -13,11 +26,9 @@ function Tags() {
         gap="60.445px"
         margin="3rem auto"
       >
-        <Image src={Js} alt="logo javascript" />
-        <Image src={NodeJs} alt="logo nodejs" />
-        <Image src={Html} alt="logo html" />
-        <Image src={ReactJs} alt="logo reactjs" />
-        <Image src={Css} alt="logo css" />
+        {tagsData.map((tag, index) => (
+          <Image key={index} src={tag.src} alt={tag.alt} />
+        ))}
       </Box>
     )
 }
