@@ -1,12 +1,25 @@
+import { Box, Image } from "@kuma-ui/core"
 import "./styles.css"
-import ImgProfile from "../../assets/perfil.jpg"
+import ImgProfile from "@assets/perfil.jpg"
 
  
  function Profile() {
  return (
-  <div className="container-img">
-    <img className="img" src={ImgProfile} alt="foto-perfil" />
-  </div>
+  <Box 
+    margin="3em auto"
+    display="flex"
+    justifyContent="center"
+    alignItems="center"
+    className="container-img"
+  >
+    <Image 
+      height="213px"
+      width="213px"
+      borderRadius="100px"
+      src={ImgProfile}
+      alt="foto-perfil" 
+    />
+  </Box>
  )
 }
 
