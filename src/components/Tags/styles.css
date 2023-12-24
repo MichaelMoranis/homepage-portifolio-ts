@@ -1,0 +1,6 @@
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 60.445px;
+    margin: 3rem auto;
+}

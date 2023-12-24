@@ -1,0 +1,15 @@
+.container-img {
+ margin: 3em auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-image: url('../../assets/AvatarBackground.svg');
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.img {
+ height: 213px;
+ width: 213px;
+ border-radius: 100px;
+}

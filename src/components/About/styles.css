@@ -1,0 +1,26 @@
+.text {
+ color: var(--secondary-text);
+ font-family: 'Roboto', sans-serif;
+ font-style: normal;
+ font-size: 18px;
+ font-weight: 300;
+ line-height: normal;
+ letter-spacing: 0.36px;
+ text-align: center;
+ width: 550px;
+ margin: 3rem auto;
+}
+
+.projects {
+    color:  #FF8660;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 35.748px;
+    letter-spacing: 0.36px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 550px;
+    margin: 3rem auto;
+}

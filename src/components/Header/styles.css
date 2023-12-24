@@ -1,0 +1,26 @@
+.header {
+ display: flex;
+ justify-content: space-around;
+ height: 82px;
+ /* background-color: var(--background-color); */
+ background: #222;
+ font-family: 'Roboto', sans-serif;;
+}
+
+.header-nav {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.menu-list {
+ display: inline-flex;
+ align-items: flex-start;
+ gap: 71px;
+ color: var(--primary-color);
+}
+
+li:hover {
+    color: var(--orange-gradient);
+    cursor: pointer;
+}
