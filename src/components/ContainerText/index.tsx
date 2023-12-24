@@ -1,4 +1,3 @@
-import "./styles.css";
 import googleIcon from "@assets/google-logo.svg";
 import metaIcon from "@assets/meta-logo.svg";
 import { Box, Text, Image, Heading } from "@kuma-ui/core";

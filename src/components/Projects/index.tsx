@@ -1,6 +1,5 @@
 import ThumbOne from "@assets/thumb-1.svg";
 import ThumbTwo from "@assets/thumb-2.svg";
-import "./styles.css";
 import { Box, Image, Text } from "@kuma-ui/core";
 
 function Projects() {
