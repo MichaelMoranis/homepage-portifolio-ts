@@ -1,4 +1,3 @@
-import "./styles.css"
 import Logo from "@assets/logo.svg"
 import { Box, Flex, HStack, Image, Text } from "@kuma-ui/core";
 
