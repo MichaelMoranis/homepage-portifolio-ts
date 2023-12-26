@@ -6,6 +6,7 @@ import Profile from "@components/Profile";
 import Projects from "@components/Projects";
 import Tags from "@components/Tags";
 import Title from "@components/Title";
+import Footer from "@components/Footer";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
          special="EXPERIENCE"
        />
        <ContainerText />
+       <Footer />
     </>
   );
 }
