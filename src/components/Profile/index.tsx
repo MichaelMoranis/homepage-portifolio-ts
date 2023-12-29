@@ -11,9 +11,9 @@ import ImgProfile from "@assets/perfil.jpg"
     alignItems="center"
   >
     <Image 
-      height="213px"
-      width="213px"
-      borderRadius="100px"
+      height={213}
+      width={213}
+      borderRadius={100}
       src={ImgProfile}
       alt="foto-perfil" 
     />

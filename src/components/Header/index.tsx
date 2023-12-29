@@ -36,7 +36,7 @@ function Header() {
         justifyContent="space-around"
         fontFamily={["Roboto", "sans-serif"]}
         bg="#222"
-        height="82px"
+        height={82}
       >
       <Box>
           <Image src={Logo} alt="#"/>
@@ -48,10 +48,6 @@ function Header() {
             gap="71px"
             listStyle="none"
           >
-            {/* <Text color="white">home</Text>
-            <Text color="white">projects</Text>
-            <Text color="white">experience</Text>
-            <Text color="white">about</Text> */}
             {arrItemList.map((list, index) => (
               <Text key={index} color={list.color}>
                 {list.text}

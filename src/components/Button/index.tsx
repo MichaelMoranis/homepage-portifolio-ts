@@ -11,12 +11,12 @@ function Button() {
         m="3rem 0"
       >
         <Box
-        as="button"
+        
           display="flex"
           alignItems="center"
           justifyContent="center"
-          width="204px"
-          height="64px"
+          width={204}
+          height={64}
           borderRadius={50}
           bg="#fff"
           fontSize="21.32px"
