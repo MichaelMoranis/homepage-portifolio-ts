@@ -2,7 +2,7 @@ import { createTheme } from "@kuma-ui/core";
  
 const theme = createTheme({
   colors: {
-     primary: "#fff",
+     primary: "#222",
      secondary: "#f6a5ce"
   },
   spacings: {
@@ -14,10 +14,10 @@ const theme = createTheme({
     md: "700px",
   },
   components: {
-    Box: {
+    App: {
       defaultProps: {
-        bg: "white", // bg is short for background
-        p: "40px", // p is short for padding
+        bg: "#222", // bg is short for background
+        // p: "40px", // p is short for padding
       },
     },
   },

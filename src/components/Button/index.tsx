@@ -11,7 +11,6 @@ function Button() {
         m="3rem 0"
       >
         <Box
-        
           display="flex"
           alignItems="center"
           justifyContent="center"
@@ -19,7 +18,7 @@ function Button() {
           height={64}
           borderRadius={50}
           bg="#fff"
-          fontSize="21.32px"
+          fontSize={"fontSizes.xl"}
           fontWeight="500"
           fontFamily={["Roboto", "sans-serif"]}
           cursor="pointer"
