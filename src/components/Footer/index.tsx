@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from "@kuma-ui/core";
+import { Box, Heading, Text, Image } from "@kuma-ui/core";
 
 function Footer() {
   return (
@@ -11,7 +11,7 @@ function Footer() {
       bgColor="#222"
       mt="5rem"
     >
-      <Heading 
+      <Heading
         color="white"
         fontSize="2rem"
         fontFamily={["Roboto", "sans-serif"]}
@@ -31,6 +31,12 @@ function Footer() {
         innovative web solutions. Adept at leveraging a comprehensive skill set
         encompassing front-end and back-end technologies
       </Text>
+      <Text>michaelmoranesul@gmail.com</Text>
+      <Box>
+       <Image />
+       <Image />
+       <Image />
+      </Box>
     </Box>
   );
 }

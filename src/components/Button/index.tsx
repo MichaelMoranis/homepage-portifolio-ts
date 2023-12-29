@@ -11,17 +11,22 @@ function Button() {
         m="3rem 0"
       >
         <Box
+        as="button"
           display="flex"
           alignItems="center"
           justifyContent="center"
           width="204px"
           height="64px"
-          borderRadius="50px"
+          borderRadius={50}
           bg="#fff"
           fontSize="21.32px"
           fontWeight="500"
           fontFamily={["Roboto", "sans-serif"]}
           cursor="pointer"
+          _hover={{
+            bg: "#ff8660",
+            color: "#fff"
+          }}
         >
           Get in Touch
         </Box>
@@ -39,6 +44,10 @@ function Button() {
           fontWeight="500"
           fontFamily={["Roboto", "sans-serif"]}
           cursor="pointer"
+          _hover={{
+            bg: "#fff",
+            color: "#000"
+          }}
         >
           Download CV
         </Box>
