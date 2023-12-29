@@ -34,9 +34,9 @@ function Button() {
           display="flex"
           alignItems="center"
           justifyContent="center"
-          width="204px"
-          height="64px"
-          borderRadius="50px"
+          width={204}
+          height={64}
+          borderRadius={50}
           bg="#000"
           border="1px solid #222"
           color="#fff"

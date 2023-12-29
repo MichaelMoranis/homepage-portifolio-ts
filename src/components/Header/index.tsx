@@ -1,6 +1,32 @@
 import Logo from "@assets/logo.svg"
 import { Box, Flex, HStack, Image, Text } from "@kuma-ui/core";
 
+interface ItemList {
+  color: string
+  text: string
+}
+
+const arrItemList: ItemList[] = [
+  {
+    color: "white", 
+    text: "home"
+  },
+  {
+    color: "white", 
+    text: "projects"
+  },
+  {
+    color: "white", 
+    text: "experience"
+  },
+  {
+    color: "white", 
+    text: "about"
+  },
+  
+
+]
+
 function Header() {
   return (
     <>
@@ -22,10 +48,15 @@ function Header() {
             gap="71px"
             listStyle="none"
           >
-            <Text color="white">home</Text>
+            {/* <Text color="white">home</Text>
             <Text color="white">projects</Text>
             <Text color="white">experience</Text>
-            <Text color="white">about</Text>
+            <Text color="white">about</Text> */}
+            {arrItemList.map((list, index) => (
+              <Text key={index} color={list.color}>
+                {list.text}
+              </Text>
+            ))}
           </HStack>
         </Box>
       </Flex>
