@@ -1,31 +1,29 @@
-import Logo from "@assets/logo.svg"
+import Logo from "@assets/logo.svg";
 import { Box, Flex, HStack, Image, Text } from "@kuma-ui/core";
 
 interface ItemList {
-  color: string
-  text: string
+  color: string;
+  text: string;
 }
 
 const arrItemList: ItemList[] = [
   {
-    color: "white", 
-    text: "home"
+    color: "white",
+    text: "home",
   },
   {
-    color: "white", 
-    text: "projects"
+    color: "white",
+    text: "projects",
   },
   {
-    color: "white", 
-    text: "experience"
+    color: "white",
+    text: "experience",
   },
   {
-    color: "white", 
-    text: "about"
+    color: "white",
+    text: "about",
   },
-  
-
-]
+];
 
 function Header() {
   return (
@@ -38,18 +36,26 @@ function Header() {
         bg="#222"
         height={82}
       >
-      <Box>
-          <Image src={Logo} alt="#"/>
-      </Box>
+        <Box>
+          <Image src={Logo} alt="#" />
+        </Box>
         <Box className="header-nav">
-          <HStack 
+          <HStack
             display="inline-flex"
             alignItems="flex-start"
             gap="71px"
             listStyle="none"
           >
             {arrItemList.map((list, index) => (
-              <Text key={index} color={list.color}>
+              <Text
+                key={index}
+                color={list.color}
+                cursor="pointer"
+                _hover={{
+                  color: "orange",
+                }}
+                fontSize={"fontSizes.lg"}
+              >
                 {list.text}
               </Text>
             ))}
@@ -59,4 +65,4 @@ function Header() {
     </>
   );
 }
-export default Header
+export default Header;
